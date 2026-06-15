@@ -213,6 +213,14 @@ The test suite validates:
 
 ---
 
+## 📸 Screen Gallery
+
+| Admin Dashboard | GPS Visit Check-In | Visit History Logs |
+| :---: | :---: | :---: |
+| ![Admin Dashboard](Screenshots/Admin-Dashboard.png) | ![GPS Check-In](Screenshots/Check-In.png) | ![Visit History](Screenshots/Visit-History.png) |
+
+---
+
 ## Author
 
  Sravanthi Lakkaraju
