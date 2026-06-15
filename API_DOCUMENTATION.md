@@ -19,7 +19,7 @@ Authorization: Bearer <your_access_token>
 ### 1.1. User Registration
 Register a new Custom User. If registering as a `SALES_REP`, a corresponding Sales Representative profile is created automatically.
 
-* **Endpoint**: `POST /sales-representatives/register/` (or without trailing slash `/sales-representatives/register`)
+* **Endpoint**: `POST /sales-representatives/register/` 
 * **Auth Required**: No (Public)
 * **Request Body**:
   ```json
@@ -49,7 +49,7 @@ Register a new Custom User. If registering as a `SALES_REP`, a corresponding Sal
 ### 1.2. User Login
 Log in to generate a JWT token.
 
-* **Endpoint**: `POST /sales-representatives/login/` (or without trailing slash `/sales-representatives/login`)
+* **Endpoint**: `POST /sales-representatives/login/` 
 * **Auth Required**: No (Public)
 * **Request Body**:
   ```json
@@ -78,7 +78,7 @@ Log in to generate a JWT token.
 ### 2.1. Create Customer
 Register a new customer location with precise GPS coordinates.
 
-* **Endpoint**: `POST /customers/` (or without trailing slash `/customers`)
+* **Endpoint**: `POST /customers/`
 * **Auth Required**: Yes (`ADMIN` or `SALES_REP`)
 * **Request Body**:
   ```json
@@ -104,7 +104,7 @@ Register a new customer location with precise GPS coordinates.
 ### 2.2. List Customers
 Retrieve list of all registered customers.
 
-* **Endpoint**: `GET /customers/` (or `/customers`)
+* **Endpoint**: `GET /customers/`
 * **Auth Required**: Yes (`ADMIN` or `SALES_REP`)
 * **Success Response (200 OK)**:
   ```json
@@ -126,7 +126,7 @@ Retrieve list of all registered customers.
 ### 3.1. Create Sales Representative Profile (Admin Direct Creation)
 Allows an administrator to manually create a sales representative profile.
 
-* **Endpoint**: `POST /sales-representatives/` (or `/sales-representatives`)
+* **Endpoint**: `POST /sales-representatives/` 
 * **Auth Required**: Yes (`ADMIN` only)
 * **Request Body**:
   ```json
@@ -151,7 +151,7 @@ Allows an administrator to manually create a sales representative profile.
 ### 3.2. Dashboard Stats
 Retrieve stats summary tailored to the authenticated user's role.
 
-* **Endpoint**: `GET /sales-representatives/dashboard-stats/` (or `/sales-representatives/dashboard-stats`)
+* **Endpoint**: `GET /sales-representatives/dashboard-stats/`
 * **Auth Required**: Yes (`ADMIN` or `SALES_REP`)
 * **Success Response for Admin (200 OK)**:
   ```json
